@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vaccine_names",
+  "info": {
+    "name": "vaccine-name"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vaccine": {
+      "model": "meets"
+    }
+  }
+}

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "meets",
   "info": {
-    "name": "meets"
+    "name": "meets",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -52,6 +53,26 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "meets"
+    },
+    "vaccine": {
+      "type": "enumeration",
+      "enum": [
+        "Any",
+        "COVISHIELD",
+        "COVAXIN",
+        "SPUTNIKV"
+      ],
+      "required": true,
+      "default": "Any"
+    },
+    "minlevel": {
+      "type": "enumeration",
+      "enum": [
+        "Partially_Vaccinated",
+        "Fully_Vaccinated"
+      ],
+      "private": false,
+      "required": true
     }
   }
 }
