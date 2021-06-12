@@ -10,6 +10,14 @@
     },
     {
       "method": "GET",
+      "path": "/meets/me",
+      "handler": "meets.me",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/meets/count",
       "handler": "meets.count",
       "config": {
